@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator Calorii Semințe</title>
+  <script>
+    function calculeazaCalorii() {
+      const coji = parseFloat(document.getElementById("coji").value.replace(',', '.'));
+      if (isNaN(coji) || coji <= 0) {
+        document.getElementById("rezultat").innerText = "Introdu o valoare validă!";
+        return;
+      }
+      const calorii = coji * 5.55;
+      document.getElementById("rezultat").innerText = `${calorii} calorii`;
+    }
+  </script>
+</head>
+<body style="font-family: Arial; text-align: center; padding: 50px;">
+  <h2>Calculator Calorii din Semințe</h2>
+  <p>Introdu greutatea cojilor (grame):</p>
+  <input type="text" id="coji" placeholder="ex: 20.5" style="padding: 8px; font-size: 16px;">
+  <br><br>
+  <button onclick="calculeazaCalorii()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">Calculează</button>
+  <br><br>
+  <div id="rezultat" style="font-size: 20px; font-weight: bold;"></div>
+</body>
+</html>
