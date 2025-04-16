@@ -1,6 +1,6 @@
 {
-  "name": "Calculator Calorii Semințe",
-  "short_name": "Calorii",
+  "name": "Seminte Cu T",
+  "short_name": "Seminte",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
